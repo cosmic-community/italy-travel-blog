@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .prose {
+    @apply text-gray-700;
+  }
+  
+  .prose h1 {
+    @apply text-3xl font-bold mb-6 text-gray-900;
+  }
+  
+  .prose h2 {
+    @apply text-2xl font-bold mb-4 mt-8 text-gray-900;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-semibold mb-3 mt-6 text-gray-900;
+  }
+  
+  .prose p {
+    @apply mb-4 leading-relaxed;
+  }
+  
+  .prose ul {
+    @apply mb-4 pl-6;
+  }
+  
+  .prose li {
+    @apply mb-2 list-disc;
+  }
+  
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+  
+  .prose em {
+    @apply italic;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center px-6 py-3 bg-secondary text-secondary-foreground font-medium rounded-lg hover:bg-secondary/90 transition-colors;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden;
+  }
+  
+  .category-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium text-white;
+  }
+}
