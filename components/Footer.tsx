@@ -1,3 +1,5 @@
+'use client'
+
 const COSMIC_BUCKET_SLUG = process.env.COSMIC_BUCKET_SLUG || 'italy-travel-blog-production'
 
 export default function Footer() {
